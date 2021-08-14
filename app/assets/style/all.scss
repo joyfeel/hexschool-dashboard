@@ -3,4 +3,10 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
 @import './base/base.scss';
-@import './layout/index.scss';
+
+@import './helpers/expand.scss';
+@import './helpers/ck-editor.scss';
+@import './helpers/scrollbar.scss';
+@import './helpers/icons.scss';
+
+@import './layout/sidebar.scss';

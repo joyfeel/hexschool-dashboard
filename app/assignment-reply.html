@@ -1,5 +1,5 @@
 ---
-title: Assignment Page
+title: Assignment Reply Page
 layout: ./app/layout.ejs
 engine: ejs
 current: assignment
@@ -48,10 +48,11 @@ current: assignment
 	</div>
 </header>
 
-<div class="assignment">
+<div class="assignment-replay">
 	<div class="container">
 		<div class="row">
 			<div class="col-4">
+				<!-- dropdown2 -->
 				<div class="dropdown mb-1">
 					<div
 						class="btn fs-6 p-0 gap-2"
@@ -293,125 +294,34 @@ current: assignment
 										image?
 									</p>
 
-									<button class="btn btn-light d-flex gap-2">
+									<a
+										class="btn btn-light gap-2"
+										href="#"
+										role="button"
+										download="HW-2-David.zip"
+									>
 										<span class="material-icons"
 											>attach_file</span
 										>
 										HW-2-David.zip
-									</button>
-								</div>
-							</div>
-
-							<div class="card-body">
-								<div class="d-flex align-items-center gap-2">
-									<img
-										class="sidebar__avatar rounded-circle"
-										src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=40&h=40&q=80"
-										alt="Andy Chen"
-									/>
-									<div class="w-100 d-flex flex-column">
-										<div
-											class="
-												d-flex
-												justify-content-between
-											"
-										>
-											<div class="text-dark fs-6">
-												Andy Chen (You)
-											</div>
-											<div class="d-flex gap-4">
-												<span
-													class="
-														material-icons-outlined
-														cursor-pointer
-													"
-													>grade</span
-												>
-												<span
-													class="
-														material-icons
-														cursor-pointer
-													"
-													>edit</span
-												>
-											</div>
-										</div>
-										<div class="text-secondary fs-7">
-											13:24 AM (1 hours ago)
-										</div>
-									</div>
-								</div>
-
-								<div class="ms-8 pe-2 mt-4 fz-7">
-									<p class="card-text mb-4">
-										Hi David, by default, an image is
-										rendered inline, like a letter so it
-										sits on the same line that a, b, c and d
-										sit on. There is space below that line
-										for the descenders you find on letters
-										like g, j, p and q.
-										<br />
-										<br />
-										You can: <br />
-									</p>
-									<ul>
-										<li>
-											adjust the
-											<span
-												class="
-													text-primary
-													bg-light
-													p-1
-												"
-												>vertical-align</span
-											>
-											of the image to position it
-											elsewhere (e.g. the
-											<span
-												class="
-													text-primary
-													bg-light
-													p-1
-												"
-												>middle</span
-											>
-											) or
-										</li>
-										<li>
-											change the display so it isn’t
-											inline.
-										</li>
-									</ul>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
+				<div class="position-relative">
+					<div id="editor"></div>
 
-<footer class="mt-auto mb-7">
-	<div class="container">
-		<div class="row">
-			<div class="col-8 offset-4">
-				<div class="d-flex justify-content-between align-items-center">
-					<div class="d-flex gap-5">
-						<span class="material-icons-outlined cursor-pointer"
-							>chevron_left</span
-						>
-						<span class="material-icons-outlined cursor-pointer"
-							>chevron_right</span
-						>
-					</div>
-
-					<div class="d-flex gap-5">
-						<button class="btn btn-outline-success px-7 py-2">
-							Mark as read
-						</button>
+					<div class="editor-wrapper position-absolute d-flex gap-5">
 						<a
-							href="assignment-reply.html"
+							href="./index.html"
+							class="btn btn-outline-success px-7 py-2"
+						>
+							Cancel
+						</a>
+						<a
+							href="./assignment-reply.html"
 							class="btn btn-success px-7 py-2"
 							>Reply</a
 						>
@@ -420,4 +330,4 @@ current: assignment
 			</div>
 		</div>
 	</div>
-</footer>
+</div>

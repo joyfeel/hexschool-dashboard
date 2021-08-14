@@ -1,0 +1,29 @@
+.sidebar {
+	min-width: 296px;
+
+	.nav-link {
+		color: $dark;
+
+		&:hover {
+			background-color: $gray-300;
+		}
+	}
+
+	.nav-link.active {
+		color: $success;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 4px;
+			height: 32px;
+			border-left: 4px solid #198754;
+		}
+	}
+
+	&__avatar {
+		width: 40px;
+		height: 40px;
+	}
+}

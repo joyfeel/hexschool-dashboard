@@ -1,0 +1,23 @@
+.expand_less {
+	display: none !important;
+}
+
+.expand_more {
+	display: inline-block !important;
+}
+
+.show,
+.collapsed {
+	> .expand_less {
+		display: inline-block !important;
+	}
+
+	> .expand_more {
+		display: none !important;
+	}
+}
+
+.list-group-item.active {
+	background-color: $gray-100;
+	border-color: $gray-400;
+}
