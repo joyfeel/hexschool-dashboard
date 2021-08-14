@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Assignment Page</title>
+
+		<link rel="stylesheet" href="./assets/style/all.css" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<div class="d-flex min-vh-100">
+			<!-- Sidebar -->
+			<aside class="sidebar d-flex flex-column justify-content-between bg-light">
+	<!-- Nav -->
+	<nav class="nav flex-column gap-2">
+		<!-- Logo -->
+		<h1 class="mt-7 my-2 ms-7">
+			<a href="/index.html" title="ANSWER" class="d-flex">
+				<img
+					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/e14818f156111b5b0a00492903c1552d319ec9c5/week5/logo-ANSWER.svg"
+					alt="ANSWER"
+				/>
+			</a>
+		</h1>
+
+		<!-- <a class="nav-link active" aria-current="page" href="#">Active</a> -->
+		<a class="nav-link d-flex align-items-center ps-7" href="#">
+			<span class="material-icons me-3">insert_chart</span>
+			Dashboard
+		</a>
+		<a class="nav-link d-flex align-items-center ps-7" href="#">
+			<span class="material-icons me-3">question_answer</span>
+			Question
+		</a>
+		<a
+			class="
+				nav-link
+				active
+				d-flex
+				align-items-center
+				ps-7
+			"
+			href="./index.html"
+		>
+			<span class="material-icons me-3">assignment</span>
+			Assignment
+		</a>
+		<a class="nav-link d-flex align-items-center ps-7" href="#">
+			<span class="material-icons me-3">video_library</span>
+			Course
+		</a>
+		<a
+			class="
+				nav-link
+				false
+				d-flex
+				align-items-center
+				ps-7
+			"
+			href="./admin.html"
+		>
+			<span class="material-icons me-3">people</span>
+			Admin
+		</a>
+		<a class="nav-link d-flex align-items-center ps-7" href="#">
+			<span class="material-icons me-3">settings</span>
+			Settings
+		</a>
+	</nav>
+
+	<!-- User Profile -->
+	<div class="d-flex align-items-center mb-7 ms-7 gap-2">
+		<img
+			class="sidebar__avatar rounded-circle"
+			src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=40&h=40&q=80"
+			alt=""
+		/>
+		<div class="d-flex flex-column gap-1">
+			<h3 class="text-dark fs-6">Andy Chen</h3>
+			<div class="text-secondary fs-7">andy0401@mail.com</div>
+		</div>
+	</div>
+</aside>
+
+<!-- font-size: 12px 14px 16px 20px 24px -->
+
+
+			<!-- Main Content -->
+			<main class="d-flex flex-column flex-grow-1">
+<header>
+	<div class="container">
+		<!-- title -->
+		<div class="d-flex justify-content-between align-items-center py-8">
+			<div class="d-flex align-items-center gap-8">
+				<h2 class="fs-4 fw-bold">Assignment</h2>
+				<div class="dropdown">
+					<div
+						class="btn d-flex fs-6 p-0 gap-1"
+						id="dropdownMenuButton1"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+					>
+						All Courses
+						<span class="material-icons expand_less cursor-pointer">
+							expand_less
+						</span>
+						<span class="material-icons expand_more cursor-pointer">
+							expand_more
+						</span>
+					</div>
+					<ul
+						class="dropdown-menu"
+						aria-labelledby="dropdownMenuButton1"
+					>
+						<li><a class="dropdown-item" href="#">Week1</a></li>
+						<li><a class="dropdown-item" href="#">Week2</a></li>
+						<li><a class="dropdown-item" href="#">Week3</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- tool -->
+			<div class="d-flex gap-7">
+				<span class="material-icons cursor-pointer">search</span>
+				<span class="material-icons cursor-pointer"
+					>notifications_active</span
+				>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="assignment">
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="dropdown mb-1">
+					<div
+						class="btn fs-6 p-0 gap-2"
+						id="dropdownMenuButton2"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+					>
+						All (4)
+						<span class="material-icons expand_less">
+							expand_less
+						</span>
+						<span class="material-icons expand_more">
+							expand_more
+						</span>
+					</div>
+					<ul
+						class="dropdown-menu"
+						aria-labelledby="dropdownMenuButton2"
+					>
+						<li><a class="dropdown-item" href="#">All</a></li>
+						<li><a class="dropdown-item" href="#">Pending</a></li>
+						<li><a class="dropdown-item" href="#">Finished</a></li>
+					</ul>
+				</div>
+
+				<div
+					class="collapse show list-group"
+					id="list-tab"
+					role="tablist"
+				>
+					<a
+						class="
+							list-group-item list-group-item-action
+							active
+							text-dark
+						"
+						id="list-home-list"
+						data-bs-toggle="list"
+						href="#list-home"
+						role="tab"
+						aria-controls="list-home"
+					>
+						<div
+							class="
+								d-flex
+								justify-content-between
+								align-items-center
+								fs-8
+								mb-1
+							"
+						>
+							<div>Chapter Assignment 2</div>
+							<div>4 hrs ago</div>
+						</div>
+						<div
+							class="
+								d-flex
+								justify-content-between
+								align-items-center
+							"
+						>
+							<div class="fs-6 fw-bold">
+								Please check this file…
+							</div>
+							<div class="text-secondary fs-8">Emily Wang</div>
+						</div>
+					</a>
+					<a
+						class="list-group-item list-group-item-action text-dark"
+						id="list-home-list"
+						data-bs-toggle="list"
+						href="#list-home"
+						role="tab"
+						aria-controls="list-home"
+					>
+						<div
+							class="
+								d-flex
+								justify-content-between
+								align-items-center
+								fs-8
+								mb-1
+							"
+						>
+							<div>Chapter Assignment 1</div>
+							<div>12 hrs ago</div>
+						</div>
+						<div
+							class="
+								d-flex
+								justify-content-between
+								align-items-center
+							"
+						>
+							<div class="fs-6 fw-bold">My Homework</div>
+							<div class="text-secondary fs-8">David Xu</div>
+						</div>
+					</a>
+					<a
+						class="list-group-item list-group-item-action text-dark"
+						id="list-home-list"
+						data-bs-toggle="list"
+						href="#list-home"
+						role="tab"
+						aria-controls="list-home"
+					>
+						<div
+							class="
+								d-flex
+								justify-content-between
+								align-items-center
+								fs-8
+								mb-1
+							"
+						>
+							<div>Final Assignment</div>
+							<div>18 hrs ago</div>
+						</div>
+						<div
+							class="
+								d-flex
+								justify-content-between
+								align-items-center
+							"
+						>
+							<div class="fs-6 fw-bold">
+								Have a problem with this…
+							</div>
+							<div class="text-secondary fs-8">Tony Wei</div>
+						</div>
+					</a>
+					<a
+						class="list-group-item list-group-item-action text-dark"
+						id="list-home-list"
+						data-bs-toggle="list"
+						href="#list-home"
+						role="tab"
+						aria-controls="list-home"
+					>
+						<div
+							class="
+								d-flex
+								justify-content-between
+								align-items-center
+								fs-8
+								mb-1
+							"
+						>
+							<div>Final Assignment</div>
+							<div>19 hrs ago</div>
+						</div>
+						<div
+							class="
+								d-flex
+								justify-content-between
+								align-items-center
+							"
+						>
+							<div class="fs-6 fw-bold">Did I do it right?</div>
+							<div class="text-secondary fs-8">Christina Lin</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-8">
+				<div class="text-end mb-1">2 comments</div>
+				<div class="tab-content" id="nav-tabContent">
+					<div
+						class="tab-pane fade show active"
+						id="list-home"
+						role="tabpanel"
+						aria-labelledby="list-home-list"
+					>
+						<div class="card">
+							<div
+								class="
+									card-header
+									d-flex
+									justify-content-between
+									align-items-center
+								"
+							>
+								<div>
+									<div class="fs-8">
+										Chapter Assignment 2 / HTML&CSS
+									</div>
+									<div class="fw-bold">
+										Please check this file for me, thanks!
+									</div>
+								</div>
+								<span class="material-icons cursor-pointer"
+									>more_vert</span
+								>
+							</div>
+
+							<div class="card-body">
+								<div class="d-flex align-items-center gap-2">
+									<img
+										class="sidebar__avatar rounded-circle"
+										src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=40&h=40&q=80"
+										alt="Emily Wang"
+									/>
+									<div class="d-flex flex-column">
+										<div class="text-dark fs-6">
+											<div>Emily Wang</div>
+										</div>
+										<div class="text-secondary fs-7">
+											10:38 AM (4 hours ago)
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="
+										border-bottom
+										ms-8
+										pe-2
+										pb-4
+										mt-4
+										fz-7
+									"
+								>
+									<p class="card-text mb-4">
+										Hi Teacher, the attached file is my
+										homework of chapter 2. And here comes a
+										question: Why in the following code the
+										height of the
+										<span class="text-primary bg-light p-1"
+											>div</span
+										>
+										is bigger than the height of the
+										<span class="text-primary bg-light p-1"
+											>img</span
+										>
+										? There is a gap below the image, but it
+										doesn’t seems to be a padding/margin.
+										<br />
+										What is the gap or extra space below
+										image?
+									</p>
+
+									<button class="btn btn-light d-flex gap-2">
+										<span class="material-icons"
+											>attach_file</span
+										>
+										HW-2-David.zip
+									</button>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<div class="d-flex align-items-center gap-2">
+									<img
+										class="sidebar__avatar rounded-circle"
+										src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=40&h=40&q=80"
+										alt="Andy Chen"
+									/>
+									<div class="w-100 d-flex flex-column">
+										<div
+											class="
+												d-flex
+												justify-content-between
+											"
+										>
+											<div class="text-dark fs-6">
+												Andy Chen (You)
+											</div>
+											<div class="d-flex gap-4">
+												<span
+													class="
+														material-icons-outlined
+														cursor-pointer
+													"
+													>grade</span
+												>
+												<span
+													class="
+														material-icons
+														cursor-pointer
+													"
+													>edit</span
+												>
+											</div>
+										</div>
+										<div class="text-secondary fs-7">
+											13:24 AM (1 hours ago)
+										</div>
+									</div>
+								</div>
+
+								<div class="ms-8 pe-2 mt-4 fz-7">
+									<p class="card-text mb-4">
+										Hi David, by default, an image is
+										rendered inline, like a letter so it
+										sits on the same line that a, b, c and d
+										sit on. There is space below that line
+										for the descenders you find on letters
+										like g, j, p and q.
+										<br />
+										<br />
+										You can: <br />
+									</p>
+									<ul>
+										<li>
+											adjust the
+											<span
+												class="
+													text-primary
+													bg-light
+													p-1
+												"
+												>vertical-align</span
+											>
+											of the image to position it
+											elsewhere (e.g. the
+											<span
+												class="
+													text-primary
+													bg-light
+													p-1
+												"
+												>middle</span
+											>
+											) or
+										</li>
+										<li>
+											change the display so it isn’t
+											inline.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="mt-auto mb-7">
+	<div class="container">
+		<div class="row">
+			<div class="col-8 offset-4">
+				<div class="d-flex justify-content-between align-items-center">
+					<div class="d-flex gap-5">
+						<span class="material-icons-outlined cursor-pointer"
+							>chevron_left</span
+						>
+						<span class="material-icons-outlined cursor-pointer"
+							>chevron_right</span
+						>
+					</div>
+
+					<div class="d-flex gap-5">
+						<button class="btn btn-outline-success px-7 py-2">
+							Mark as read
+						</button>
+						<a
+							href="assignment-reply.html"
+							class="btn btn-success px-7 py-2"
+							>Reply</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</main>
+		</div>
+
+		<script src="./assets/js/vendors.js"></script>
+		<script src="./assets/js/all.js"></script>
+		<script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+		<script>
+			ClassicEditor.create(document.querySelector('#editor'))
+				.then((editor) => {
+					console.log(editor);
+				})
+				.catch((error) => {
+					console.error(error);
+				});
+		</script>
+	</body>
+</html>
